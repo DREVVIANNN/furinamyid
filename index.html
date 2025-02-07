@@ -1,32 +1,62 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img3.png" type="image/x-icon" />
-    <title>Under Maintenance</title>
-
-    <link rel="stylesheet" href="tailwind.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DREVVIANN AI. | Official Website</title>
+  <link rel="shortcut icon" href="maibgg.jpg" type="image/x-icon" />
+  <!-- Linking Google Fonts For Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient">
+<body>
+  <header class="header">
+    <!-- Header Greetings -->
+    <h1 class="title">DREVVIANN AI.</h1>
+    <p class="subtitle">Langsung tanyain aja lek!</p>
 
-    <div class="container mx-auto">
-      
-        <section class="flex flex-wrap lg:flex-nowrap justify-center h-screen relative">
-            <div class="my-auto font-poppins text-gray-200 text-center lg:text-left">
-                <h1 class="font-medium text-5xl py-3">The website is in <br> development</h1>
-                <p class="lg:w-5/6">we have done all the technical improvements<br>and will back very soon. Thank you for your patience!<br>~DREVVIANN.</p><br>
-                <a class="button" href="https://www.nekotopia.site">Back To Homepage</a><br><br>© 2025 DREVVIANN. All rights reserved.
-            </div>
-            <div class="my-auto text-center w-3/4 lg:w-2/5">
-                <img class="rounded-full image1 animate-moveY" src="img1.jpg" alt="image1">
-                <img class="image2 animate-rotateZ" src="img2.png" alt="image2">
-                <img class="image3  animate-rotateZ" src="img3.png" alt="image3">
-            </div>
-        </section>
+    <!-- Suggestion list -->
+    <ul class="suggestion-list">
+      <li class="suggestion">
+        <h4 class="text">Rekomendasi Anime Romance Terbaik</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Perlu berapa banyak uang untuk membuat satu episode anime?</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Apa bedanya otaku dan wibu?, tolong jelaskan.</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+      <li class="suggestion">
+        <h4 class="text">Apa saja yang di perlukan untuk membuat anime?</h4>
+        <span class="icon material-symbols-rounded">lightbulb</span>
+      </li>
+    </ul>
+  </header>
 
+  <!-- Chat List / Container -->
+  <div class="chat-list"></div>
 
-    </div>
+  <!-- Typing Area -->
+  <div class="typing-area">
+    <form action="#" class="typing-form">
+      <div class="input-wrapper">
+        <input type="text" placeholder="Enter a prompt here" class="typing-input" required />
+        <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+        <span id="theme-toggle-button" class="icon material-symbols-rounded">light_mode</span>
+        <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+    </form>
+    <p class="disclaimer-text">
+      DREVVIANN AI. may display inaccurate info, including about people, so double-check its responses.<br>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
